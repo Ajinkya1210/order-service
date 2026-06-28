@@ -49,6 +49,8 @@ This project is a simple Node.js microservice built using TypeScript and Express
 ### Cloud
 1.AWS Cloud
 
+![sc](sc/8.png)
+
 ### AWS Infrastructure
 #### API Endpoints
 #### 1. Health Check
@@ -56,9 +58,7 @@ This project is a simple Node.js microservice built using TypeScript and Express
 GET /health
 
 Response:
-
 {
-    
     "status": "UP",
 
   "message": "Service is running"
