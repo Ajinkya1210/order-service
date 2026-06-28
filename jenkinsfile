@@ -1,0 +1,37 @@
+pipeline {
+agent any
+
+```
+stages {
+
+    stage('Checkout Code') {
+        steps {
+            git branch: 'master',
+                url: 'https://github.com/Ajinkya1210/order-service.git'
+        }
+    }
+
+    stage('Deploy to App Server') {
+        steps {
+            sshagent(['app-server-ssh']) {
+                sh '''
+                ssh -o StrictHostKeyChecking=no ubuntu@172.31.21.152 "
+                if [ ! -d ~/order-service ]; then
+                    git clone https://github.com/Ajinkya1210/order-service.git ~/order-service
+                fi
+
+                cd ~/order-service
+
+                git pull origin master
+
+                docker compose down || true
+                docker compose up -d --build
+                "
+                '''
+            }
+        }
+    }
+}
+```
+
+}
