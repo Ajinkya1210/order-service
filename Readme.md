@@ -1,5 +1,14 @@
 # Order Service - DevOps Project
 ##
+[![Jenkins CI/CD](https://img.shields.io/badge/Jenkins-CI%2FCD-0078D4?style=flat&logo=jenkins&logoColor=orange&labelColor=555555)](image_5.png)
+![GitHub](https://img.shields.io/badge/GitHub-Repository-181717?style=flat&logo=github&logoColor=white)
+![AWS](https://img.shields.io/badge/AWS-Cloud-FF9900?style=flat&logo=amazonaws&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-Web_Framework-000000?style=flat&logo=express&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-Language-3178C6?style=flat&logo=typescript&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=flat&logo=node.js&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Registry-0078D4?style=flat&logo=docker&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?style=flat&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-Dashboard-F46800?style=flat&logo=grafana&logoColor=white)
 ### Overview
 This project is a simple Node.js microservice built using TypeScript and Express. It demonstrates a complete DevOps workflow including containerization, CI/CD automation, monitoring, and deployment on AWS.
 ### Features
