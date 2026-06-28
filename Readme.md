@@ -9,7 +9,12 @@
 ![Docker](https://img.shields.io/badge/Docker-Registry-0078D4?style=flat&logo=docker&logoColor=white)
 ![Prometheus](https://img.shields.io/badge/Prometheus-Monitoring-E6522C?style=flat&logo=prometheus&logoColor=white)
 ![Grafana](https://img.shields.io/badge/Grafana-Dashboard-F46800?style=flat&logo=grafana&logoColor=white)
+
+### Architecture
+![sc](sc/9.png)
+
 ### Overview
+
 This project is a simple Node.js microservice built using TypeScript and Express. It demonstrates a complete DevOps workflow including containerization, CI/CD automation, monitoring, and deployment on AWS.
 ### Features
 1.Health Check API
@@ -46,6 +51,29 @@ This project is a simple Node.js microservice built using TypeScript and Express
 1.Prometheus
 
 2.Grafana
+
+### AIOps Implementation
+
+This project includes a basic AIOps module that automatically analyzes Prometheus metrics and detects abnormal system behavior.
+
+#### Workflow
+
+1.Prometheus collects application metrics.
+
+2.Python AIOps script queries Prometheus API.
+
+3.Error counts are analyzed against a threshold.
+
+4.An alert is generated when abnormal behavior is detected.
+
+##### Example Alert
+
+Current Error Count: 19.0
+
+ALERT: High error rate detected!
+
+![sc](sc/10.png)
+
 ### Cloud
 1.AWS Cloud
 
@@ -54,6 +82,7 @@ This project is a simple Node.js microservice built using TypeScript and Express
 ### AWS Infrastructure
 #### API Endpoints
 #### 1. Health Check
+
 
 GET /health
 
